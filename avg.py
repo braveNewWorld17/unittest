@@ -1,11 +1,15 @@
 import sys
 
 def compute_average(numbers):
+    sum = 0
     if not numbers:
         return 0
-    sum = 0
     for number in numbers:
-        sum += number
+        try :
+            sum += number
+        except TypeError:
+            print("Value is not number type.")
+
     return sum/len(numbers)    
 
 def main():
