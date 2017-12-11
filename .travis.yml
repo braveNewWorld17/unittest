@@ -8,3 +8,5 @@ python:
 
 script: python3 ./test.py 
 
+notifications:
+    slack: kirkaldy:4TqFw7wxwe3ZVlJTh0OoUffr
